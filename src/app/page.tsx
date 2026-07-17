@@ -60,7 +60,7 @@ export default function Home() {
                 Explore skills
               </a>
               <a
-                href="http://localhost:8000/api/portfolio"
+                href={`${process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"}/api/portfolio`}
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full border border-slate-700 px-5 py-3 font-medium text-slate-100 transition hover:bg-slate-800"
